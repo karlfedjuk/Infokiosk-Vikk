@@ -8,9 +8,51 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
-            <TextBlock FontSize="50" Text="Tunniplaan"></TextBlock>
-        </StackPanel>
+        <Pivot>
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                        <FontIcon HorizontalAlignment="Center"
+                                  Glyph="&#xE716;"
+                                  FontSize="16"></FontIcon>
+                        <TextBlock Text="Grupp"></TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <StackPanel>
+                    <TextBlock Text="Midagi"></TextBlock>
+                </StackPanel>
+            </PivotItem>
+
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                        <FontIcon HorizontalAlignment="Center"
+                                  Glyph="&#xE778;"
+                                  FontSize="16"></FontIcon>
+                        <TextBlock Text="Õpetaja"></TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <StackPanel>
+                    <TextBlock Text="Marco Tasane"></TextBlock>
+                </StackPanel>
+            </PivotItem>
+
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                        <FontIcon HorizontalAlignment="Center"
+                                  Glyph="&#xE80F;"
+                                  FontSize="16"></FontIcon>
+                        <TextBlock Text="Ruum"></TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <StackPanel>
+                    <TextBlock Text="Maja"></TextBlock>
+                </StackPanel>
+            </PivotItem>
+            
+
+        </Pivot>
     </Grid>
 </Page>
 

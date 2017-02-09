@@ -78,6 +78,18 @@
       <RootProperty Name="Fill" />
     </RootType>
     <RootType FullName="InfoKioskVIKK.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Glyph" />
+      <RootProperty Name="FontSize" />
+    </RootType>
     <RootType FullName="Infokiosk_Vikk.Tunniplaan" />
     <RootType FullName="Infokiosk_Vikk.Uudised" />
   </Roots.RootTypes>
