@@ -13,7 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Web.Http;
-using Windows.Data.Json;
+using Newtonsoft.Json;
+//using Windows.Data.Json;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -36,8 +37,15 @@ namespace Infokiosk_Vikk
             var veebileht = new HttpClient();
             HttpResponseMessage vastus = await veebileht.GetAsync(new Uri("https://vikk.siseveeb.ee/veebilehe_andmed/tunniplaan?nadal=06.02.2017&nimekiri=grupp"));
             var sisu = await vastus.Content.ReadAsStringAsync();
-            //    SisuBlock.Text = sisu;
-            JsonArray root = JsonArray.Parse(sisu).GetArray();
+
+            var root = JsonConvert.DeserializeObject <RootObject>(sisu);
+            foreach (var grupp in root.grupp)
+            {
+                SisuBlock.Text = SisuBlock.Text + grupp.nimi;
+            }
+            
+            
+           
         }
         public class Grupp
         {

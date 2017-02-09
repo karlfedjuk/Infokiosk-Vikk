@@ -20,7 +20,13 @@
                 </PivotItem.Header>
                 <StackPanel>
                     <TextBlock  Name="SisuBlock" 
-                                Text="Sisu1"></TextBlock>
+                                Text="Sisu1">
+                        <TextBlock.Foreground>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </TextBlock.Foreground></TextBlock>
                 </StackPanel>
             </PivotItem>
 
@@ -51,7 +57,7 @@
                     <TextBlock Text="Maja"></TextBlock>
                 </StackPanel>
             </PivotItem>
-            
+
 
         </Pivot>
     </Grid>

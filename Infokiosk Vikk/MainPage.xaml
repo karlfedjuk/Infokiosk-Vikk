@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -26,7 +26,8 @@
                     Grid.RowSpan="2"
                     Grid.ColumnSpan="2"
                     Padding="20"
-                    Name="ContentFrame">
+                    Name="ContentFrame" FontStyle="Italic"
+                    >
             <Rectangle Fill="AliceBlue"></Rectangle>
         </Frame>
 
@@ -36,8 +37,11 @@
                     Content="&#xE72B;"
                     FontSize="30" 
                     Click="backButton_Click"
-                    Width="50">
+                    Width="50"
+                    Background="White"
+                    >
             </Button>
+            
         </RelativePanel>
 
         <RelativePanel Grid.Row="1">
@@ -46,7 +50,8 @@
                     Content="&#xE700;"
                     FontSize="30" 
                     Click="hamburgerButton_Click"
-                    Width="50">
+                    Width="50"
+                    Background="White">
             </Button>
 
         </RelativePanel>
@@ -101,6 +106,7 @@
                             <TextBlock Text="Tunniplaan"
                                        FontSize="24"
                                        Margin="20,0,0,0">
+                                        
 
                             </TextBlock>
                         </StackPanel>

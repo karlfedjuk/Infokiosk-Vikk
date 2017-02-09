@@ -210,3 +210,4 @@ C:\Users\karl.fedjuk\Documents\Visual Studio 2015\Projects\Infokiosk Vikk\Infoki
 C:\Users\karl.fedjuk\Documents\Visual Studio 2015\Projects\Infokiosk Vikk\Infokiosk Vikk\bin\x86\Debug\Pages\Kontaktid.xbf
 C:\Users\karl.fedjuk\Documents\Visual Studio 2015\Projects\Infokiosk Vikk\Infokiosk Vikk\bin\x86\Debug\Pages\Tunniplaan.xbf
 C:\Users\karl.fedjuk\Documents\Visual Studio 2015\Projects\Infokiosk Vikk\Infokiosk Vikk\bin\x86\Debug\Pages\Uudised.xbf
+C:\Users\karl.fedjuk\Documents\Visual Studio 2015\Projects\Infokiosk Vikk\Infokiosk Vikk\bin\x86\Debug\Newtonsoft.Json.dll
