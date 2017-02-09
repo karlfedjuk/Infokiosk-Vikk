@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="Infokiosk_Vikk.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Infokiosk_Vikk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <RelativePanel>
+            <Button Name="hamburgerButton" 
+                    Content="&#xE700;" 
+                    FontStretch="Condensed" 
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="36" 
+                    Click="hamburgerButton_Click"
+                    
+                    >
+            </Button>
+        </RelativePanel>
+
+        <SplitView Grid.Row="1"
+                   Name="MySplitView"
+                   DisplayMode="CompactOverlay"
+                   OpenPaneLength="200"
+                   CompactPaneLength="56"
+                   HorizontalAlignment="Left">
+            <SplitView.Pane>
+                <ListBox SelectionMode="Single"
+                         Name="IconsListBox"
+                         SelectionChanged="IconsListBox_SelectionChanged">
+                    
+                    <ListBoxItem Name="UudisedBoxitem">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets"
+                                       FontSize="36"
+                                       Text="&#xE72D;"></TextBlock>
+
+                            <TextBlock Text="Uudised"
+                                       FontSize="24"
+                                       Margin="20,0,0,0">
+                            </TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                   
+                    <ListBoxItem Name="TunniplaaniBoxitem">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock
+                                FontFamily="Segoe MDL2 Assets"
+                                FontSize="36"
+                              Text="&#xE734;"></TextBlock>
+                            <TextBlock
+                                Text="Tunniplaan"
+                                FontSize="24"
+                                Margin="20,0,0,0"></TextBlock>    
+                        </StackPanel>
+                    </ListBoxItem>
+                        
+                    <ListBoxItem Name="KontaktidBoxitem">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock 
+                                FontFamily="Segoe MDl2 Assets"
+                                FontSize="36"
+                                Text="&#xE717;"></TextBlock>
+
+                            <TextBlock 
+                                Text="Kontaktid"
+                                FontSize="24"
+                                Margin="20,0,0,0"></TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+        </SplitView>
+    </Grid>
+</Page>
