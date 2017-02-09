@@ -132,15 +132,23 @@ namespace Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "Infokiosk_Vikk.MainPage";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "Infokiosk_Vikk.Avaleht";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Infokiosk_Vikk.Kontaktid";
+            _typeNameTable[4] = "InfoKioskVIKK.MainPage";
+            _typeNameTable[5] = "Infokiosk_Vikk.Tunniplaan";
+            _typeNameTable[6] = "Infokiosk_Vikk.Uudised";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::Infokiosk_Vikk.MainPage);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::Infokiosk_Vikk.Avaleht);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::Infokiosk_Vikk.Kontaktid);
+            _typeTable[4] = typeof(global::InfoKioskVIKK.MainPage);
+            _typeTable[5] = typeof(global::Infokiosk_Vikk.Tunniplaan);
+            _typeTable[6] = typeof(global::Infokiosk_Vikk.Uudised);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +183,11 @@ namespace Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Infokiosk_Vikk.MainPage(); }
+        private object Activate_0_Avaleht() { return new global::Infokiosk_Vikk.Avaleht(); }
+        private object Activate_3_Kontaktid() { return new global::Infokiosk_Vikk.Kontaktid(); }
+        private object Activate_4_MainPage() { return new global::InfoKioskVIKK.MainPage(); }
+        private object Activate_5_Tunniplaan() { return new global::Infokiosk_Vikk.Tunniplaan(); }
+        private object Activate_6_Uudised() { return new global::Infokiosk_Vikk.Uudised(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +199,9 @@ namespace Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Infokiosk_Vikk.MainPage
+            case 0:   //  Infokiosk_Vikk.Avaleht
                 userType = new global::Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_Avaleht;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +212,34 @@ namespace Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Infokiosk_Vikk.Kontaktid
+                userType = new global::Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Kontaktid;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  InfoKioskVIKK.MainPage
+                userType = new global::Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Infokiosk_Vikk.Tunniplaan
+                userType = new global::Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_Tunniplaan;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Infokiosk_Vikk.Uudised
+                userType = new global::Infokiosk_Vikk.Infokiosk_Vikk_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_Uudised;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
