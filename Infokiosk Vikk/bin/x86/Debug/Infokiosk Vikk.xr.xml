@@ -31,6 +31,7 @@
       <RootProperty Name="Text" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Infokiosk_Vikk.Avaleht" />
     <RootType FullName="Infokiosk_Vikk.Kontaktid" />

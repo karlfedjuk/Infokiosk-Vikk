@@ -19,7 +19,8 @@
                     </StackPanel>
                 </PivotItem.Header>
                 <StackPanel>
-                    <TextBlock Text="Midagi"></TextBlock>
+                    <TextBlock x:ConnectionId='1'  Name="SisuBlock" 
+                                Text="Sisu1"></TextBlock>
                 </StackPanel>
             </PivotItem>
 
